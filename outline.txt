@@ -1,0 +1,28 @@
+{1} Title And Introduction | SonarSource customer
+{2} Code quality context setting
+{3} Seven deadly sins of Developers | List of 7 deadly sins and compare them with popular aritcles
+{4} Samples of null deference
+{5} Coding standard breach
+{6} 7 Axes of Code Quality
+{7} Code Quality Analyzers
+{8} SonarQube
+{9} Sonar Evolution | From mvn sonar:sonar to Clusters
+{10} Quality Management platform
+{11} Demo: Sonar Metrics
+{12} Sonar Technical Debt
+{13} Squid Engine
+{14} Demo: Sonar Management
+{15} Sonar Defense
+{16} Thank you
+
+Log This:
+"[1a] https://www.sonarsource.com/customers/ (Look for sella.it) \n"+
+"[2a] https://twitter.com/ceciliaborg/status/398059318810918912 \n"+
+"[3a] http://docs.sonarqube.org/display/HOME/Developers'+Seven+Deadly+Sins \n"+
+"[6a] http://www.sonarqube.org/wp-content/themes/sonar/images/7axes.png \n"+
+"[7a] https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis \n"+
+"[8a] http://softwaregarden.io/sonarqube/ \n"+
+"[8b] https://www.sonarsource.com/ \n"+
+"[9a} http://www.sonarqube.org/we-had-a-dream-mvn-sonarsonar/ \n"+
+"[9b] http://www.sonarqube.org/category/blog/ \n"+
+"[15a] http://www.sonarqube.org/putting-it-all-together-end-to-end-quality-with-sonarecosystem/ \n"

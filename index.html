@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1024" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Sonarqube for Code quality</title>
+  <!--<link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />-->
+  <link href="css/impress-pbshiva.css" rel="stylesheet" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+  <div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+  </div>
+
+  <div id="impress">
+    <div id="title" class="step" data-x="0" data-y="0" data-rotate="45">
+      <h1>SonarQube for Code quality</h1>
+      <br/>
+      <br/>
+      <br/>
+      <span class="footnote">        
+        <table>
+          <tr><td><i>Shiva Hari Kumar B</i></td></tr>
+          <tr><td><i>Developer, Banca Sella</i></td></tr>
+        </table>
+        </span>
+
+    </div>
+
+    <div id="code-quality" class="step slide" data-x="1000" data-y="0">
+      <q><b>Code quality :</b></q>
+      <q style="font-size:30px">“It’s an indicator about how quickly developers can add business value to a software system”<sup>[2a]</sup></q>
+      <img src="?" style="width:90%;margin-left:7%"></img>
+    </div>
+
+    <div id="7-Technical-Sins" class="step slide" data-x="2000" data-y="0">
+      <q><b>Technical Sins :</b></q> <sup>[3a]</sup>
+      <br/>
+      <div style="font-size:20px;margin-top:5px;line-height:45px">
+        <li>Bugs and Potential Bugs</li>
+        <li>Coding Standards Breach</li>
+        <li>Duplications</li>
+        <li>Lack of Unit Tests</li>
+        <li>Bad Distribution of Complexity</li>
+        <li>Spaghetti Design</li>
+        <li>Not Enough or Too Many Comments</li>
+      </div>
+    </div>
+
+    <div id="null-dereferenced2" class="step slide" data-x="3000" data-y="0">
+      <b>userID might be <font color="red">null</font></b>
+      <br/>
+      <br/>
+      <pre>
+  ...
+  Long userID = null;
+  try {
+    userID = session.get("USER_ID");
+    ...
+  }catch(java.lang.Exception e){
+    ...
+  }finally {
+    log.severe(userID.toString(), "FAILURE");
+    ...
+  }
+  ...
+      </pre>
+    </div>
+
+    <div id="conventions2" class="step slide" data-x="4000" data-y="0">
+
+      <b>SalaryComponent.java</b>
+      <br/>
+      <br/>
+      <div style="border: 1px solid maroon">
+        <pre>
+  int static final INCREMENT = 10;
+  int static final bonus = 3000;
+      </pre></div>
+      <br/>
+      <b>SalaryCalculator.java</b>
+      <br/>
+      <br/>
+      <div style="border: 1px solid blue">
+        <pre>
+  if(promoted)
+  salary = getSalary(level);
+  else{
+  hike = 1 + (SalaryComponent.INCREMENT/100);
+  salary = salary * hike;}
+  salary = salary + SalaryComponent.bonus;
+      </pre>
+      </div>
+    </div>
+
+    <div id="7-axes" class="step slide" data-x="4000" data-y="1000" data-rotate="45">
+      <p>Thus, <b class="positioning">7 Axes</b><b class="rotating"> of </b><b class="scaling">Code Quality</b></p> <sup>[6a]</sup>
+      <img src="?" style="margin:95px;width:77%" />
+    </div>
+
+    <div id="analyzers" class="step slide" data-x="3000" data-y="1000" data-rotate="90">
+      <q style="margin-top:45px"><b>Code Quality Analyzers</b></q>
+      <q style="font-size:20px;margin-top:5px;line-height:45px">
+        <li>*Lint, Fingbugs, FxCop, SonarQube, Yasca</li>
+        <li>Codacy, Coverity, Fortify</li>
+        <br/>
+        <sup>[7a]</sup>
+                </q>
+
+    </div>
+
+    <div id="sonarqube" class="step slide" data-x="0" data-y="1000">
+      <q style="margin-top:5%"><b>SonarQube</b></q>
+      <q style="font-size:20px;margin-top:5px;line-height:45px">
+<li>Open source platform for continuous inspection of code quality</li>
+<li>Tracks developer's seven deadly sins</li>
+<sup>[8a]</sup><li>Gives trends of lagging and leading indicators</li>
+<li>Language agnostic</li>
+<li>Extensible through plugins</li>
+<sup>&nbsp;&nbsp;&nbsp;[8b]</sup><span style="float:right">Developed by SonarSource</span>
+</q>
+    </div>
+
+    <div id="sonarevolution" class="step slide" data-x="1000" data-y="1000">
+      <q><b>Sonar Evolution</b></q>
+      <q style="font-size:20px;margin-top:5px;line-height:45px">
+                        <sup>[9a]</sup><li>mvn sonar:sonar</li>
+                        <li>Sonar Ruleset</li>
+                        <li>Squid engine</li>
+                        <li>SQALE</li>
+                        <li>Bugs & Vulnerabilities, Code smell</li>
+                        <li>Clustering</li>
+        <br/>
+        <sup>[9b]</sup>
+                </q>
+
+    </div>
+    <div id="platform" class="step slide" data-x="2000" data-y="1000">
+      <q><b>Quality Management platform</b></q>
+      <q style="font-size:20px;margin-top:5px;line-height:45px">
+                        <li>Opensource community</li>
+                        <li>Partnership with Microsoft</li>
+                        <li>Classic Commercial model</li>
+      </q> //add all language metric logo
+      <pre>
+                Developer
+                Tester
+                Architect
+                Manager
+      </pre>
+    </div>
+
+    <div id="sonar-metrics" class="step" data-x="4000" data-y="2000" data-rotate="90">
+      <q>Demo: <b>Sonar Metrics</b></q>
+    </div>
+
+
+    <div id="sonar-techdebt" class="step slide" data-x="3000" data-y="2000" data-rotate="90">
+      <q><b>Technical Debt</b></q>
+      <br/>
+      <br/>
+      <p style="font-size:30px"><i>"If the debt grows large enough, eventually the company will spend more on servicing its debt than it invests in increasing the value of its other assets"</i>
+        <span style="float:right"><b>-Steve McConnell</b></span>
+        <br>
+        <span style="float:right;font-size:20px">(Author of Complete Code)</span>
+      </p>
+
+    </div>
+
+    <div id="squid-engine" class="step" data-x="2000" data-y="2000" data-rotate="90">
+      <q>Squid Engine</q>
+      <img src="?" style="width: 70%;margin-left: -47px;"></img>
+      <li>Custom Rules</li>
+      <li>Custom Widgets</li>
+      <li>New language plugin</li>
+      <li><a href="http://www.sonarqube.org/get-involved/">Contribute</a></li>
+    </div>
+
+    <div id="sonar-management" class="step" data-x="1000" data-y="2000" data-rotate="90">
+      <q><b>Demo : SonarQube Management</b></q>
+
+      <br/>
+      <br/>
+      <table>
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+          <td>
+            <li>Quality Gate</li>
+            <li>Quality Profile</li>
+            <li>Exclusions</li>
+            <li>Inclusions</li>
+          </td>
+        </tr>
+      </table>
+
+    </div>
+
+    <div id="sonar-defense" class="step slide" data-x="0" data-y="2000">
+      <q>Precommit Analysis</q>
+      <br/>
+      <li>SonarLint</li>
+      <li>SonarQube plugin</li>
+      <li>Github pull plugin</li>
+      <br/>
+      <sup>[15a]</sup>
+    </div>
+
+    <div id="overview" class="step" data-x="2000" data-y="1000" data-scale="4"></div>
+
+    <div id="thanku" class="step" data-x="2000" data-y="3500" data-rotate="20" data-scale="2">
+      <p style="font-size=10px"> want to know more?
+        <span style="bottom:0;float:right"><a href="http://docs.sonarqube.org/display/SONAR/Documentation">Documentation</a><br/><a href="http://stackoverflow.com/questions/tagged/sonarqube">Stackoverflow<a><br/><a href="https://groups.google.com/forum/#!forum/sonarqube">Google Group</a></span>
+      </p>
+      <div></div>
+  </div>
+
+  <script src="js/impress.js"></script>
+  <script>
+    impress().init();
+    logThis = "[1a] https://www.sonarsource.com/customers/ (Look for sella.it) \n" +
+      "[2a] https://twitter.com/ceciliaborg/status/398059318810918912 \n" +
+      "[3a] http://docs.sonarqube.org/display/HOME/Developers'+Seven+Deadly+Sins \n" +
+      "[6a] http://www.sonarqube.org/wp-content/themes/sonar/images/7axes.png \n" +
+      "[7a] https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis \n" +
+      "[8a] http://softwaregarden.io/sonarqube/ \n" +
+      "[8b] https://www.sonarsource.com/ \n" +
+      "[9a} http://www.sonarqube.org/we-had-a-dream-mvn-sonarsonar/ \n" +
+      "[9b] http://www.sonarqube.org/category/blog/ \n" +
+      "[15a] http://www.sonarqube.org/putting-it-all-together-end-to-end-quality-with-sonarecosystem/ \n";
+    console.log(logThis);
+  </script>
+</body>
+
+</html>
