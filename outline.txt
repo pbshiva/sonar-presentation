@@ -1,28 +1,33 @@
 {1} Title And Introduction | SonarSource customer
 {2} Code quality context setting
-{3} Seven deadly sins of Developers | List of 7 deadly sins and compare them with popular aritcles
-{4} Samples of null deference
-{5} Coding standard breach
-{6} 7 Axes of Code Quality
-{7} Code Quality Analyzers
-{8} SonarQube
-{9} Sonar Evolution | From mvn sonar:sonar to Clusters
-{10} Quality Management platform
-{11} Demo: Sonar Metrics
-{12} Sonar Technical Debt
+{3} Technical Debt
+{4} Seven deadly sins of Developers | List of 7 deadly sins and compare them with popular aritcles
+{5} Samples of null deference
+{6} Coding standard breach
+{7} 7 Axes of Code Quality
+{8} Code Quality Analyzers
+{9} SonarQube
+{10} Sonar Evolution | From mvn sonar:sonar to Clusters
+{12} Quality Management platform
+{12} Demo: Sonar Metrics
 {13} Squid Engine
 {14} Demo: Sonar Management
 {15} Sonar Defense
 {16} Thank you
 
+
+
 Log This:
 "[1a] https://www.sonarsource.com/customers/ (Look for sella.it) \n"+
 "[2a] https://twitter.com/ceciliaborg/status/398059318810918912 \n"+
-"[3a] http://docs.sonarqube.org/display/HOME/Developers'+Seven+Deadly+Sins \n"+
-"[6a] http://www.sonarqube.org/wp-content/themes/sonar/images/7axes.png \n"+
-"[7a] https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis \n"+
-"[8a] http://softwaregarden.io/sonarqube/ \n"+
-"[8b] https://www.sonarsource.com/ \n"+
-"[9a} http://www.sonarqube.org/we-had-a-dream-mvn-sonarsonar/ \n"+
-"[9b] http://www.sonarqube.org/category/blog/ \n"+
-"[15a] http://www.sonarqube.org/putting-it-all-together-end-to-end-quality-with-sonarecosystem/ \n"
+"[3a] http://www.oregonlive.com/politics/index.ssf/2016/09/post_183.html \n"+
+"[3b] http://uk.businessinsider.com/apple-maps-review-ios-10-google-maps-2016-10 \n"+
+"[4a] http://docs.sonarqube.org/display/HOME/Developers'+Seven+Deadly+Sins \n"+
+"[7a] http://www.sonarqube.org/wp-content/themes/sonar/images/7axes.png \n"+
+"[8a] https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis \n"+
+"[8b] http://www.scrumexpert.com/tools/tools-to-assess-and-manage-technical-debt/ \n"+
+"[9a] http://softwaregarden.io/sonarqube/ \n"+
+"[9b] https://www.sonarsource.com/ \n"+
+"[10a} http://www.sonarqube.org/we-had-a-dream-mvn-sonarsonar/ \n"+
+"[10b] http://www.sonarqube.org/category/blog/ \n"+
+"[15a] http://www.sonarqube.org/putting-it-all-together-end-to-end-quality-with-sonarecosystem/ \n";
