@@ -27,7 +27,7 @@
       <span class="footnote">        
         <table>
           <tr><td><i>Shiva Hari Kumar B</i></td></tr>
-          <tr><td><i>Developer, Banca Sella</i></td></tr>
+          <tr><td><sup>[1a]</sup><i>Developer, Banca Sella</i></td></tr>
         </table>
         </span>
 
@@ -36,11 +36,29 @@
     <div id="code-quality" class="step slide" data-x="1000" data-y="0">
       <q><b>Code quality :</b></q>
       <q style="font-size:30px">“It’s an indicator about how quickly developers can add business value to a software system”<sup>[2a]</sup></q>
-      <img src="?" style="width:90%;margin-left:7%"></img>
+      <img src="?" style="width:90%;margin-left:7%"/>
     </div>
-
-    <div id="7-Technical-Sins" class="step slide" data-x="2000" data-y="0">
-      <q><b>Technical Sins :</b></q> <sup>[3a]</sup>
+  
+    <div id="sonar-techdebt" class="step slide" data-x="2000" data-y="0">
+      <q><b>Technical Debt</b></q>
+      <br/>
+      <br/>
+      <p style="font-size:30px"><i>"If the debt grows large enough, eventually the company will spend more on servicing its debt than it invests in increasing the value of its other assets"</i>
+        <span style="float:right"><b>-Steve McConnell</b></span>
+        <br>
+        <span style="float:right;font-size:20px">(Author of Complete Code)</span>
+      </p>
+      <br/>
+      <br/>
+      <p style="font-size:25px">
+      Case Study
+      <li style="font-size:20px"><sup>[3a]</sup>Cover Oregon</li>
+      <li style="font-size:20px"><sup>[3b]</sup>Apple Maps</li>
+      </p>
+    </div>
+    
+    <div id="7-Technical-Sins" class="step slide" data-x="3000" data-y="0">
+      <q><b>Technical Sins :</b></q> <sup>[4a]</sup>
       <br/>
       <div style="font-size:20px;margin-top:5px;line-height:45px">
         <li>Bugs and Potential Bugs</li>
@@ -53,10 +71,11 @@
       </div>
     </div>
 
-    <div id="null-dereferenced2" class="step slide" data-x="3000" data-y="0">
+    <div id="null-dereferenced2" class="step slide" data-x="4000" data-y="0">
       <b>userID might be <font color="red">null</font></b>
       <br/>
       <br/>
+      <div style="border: 1px solid red">
       <pre>
   ...
   Long userID = null;
@@ -71,6 +90,7 @@
   }
   ...
       </pre>
+      </div>
     </div>
 
     <div id="conventions2" class="step slide" data-x="4000" data-y="0">
@@ -100,7 +120,7 @@
     </div>
 
     <div id="7-axes" class="step slide" data-x="4000" data-y="1000" data-rotate="45">
-      <p>Thus, <b class="positioning">7 Axes</b><b class="rotating"> of </b><b class="scaling">Code Quality</b></p> <sup>[6a]</sup>
+      <p>Thus, <b class="positioning">7 Axes</b><b class="rotating"> of </b><b class="scaling">Code Quality</b></p> <sup>[7a]</sup>
       <img src="?" style="margin:95px;width:77%" />
     </div>
 
@@ -110,7 +130,9 @@
         <li>*Lint, Fingbugs, FxCop, SonarQube, Yasca</li>
         <li>Codacy, Coverity, Fortify</li>
         <br/>
-        <sup>[7a]</sup>
+        <sup>[8a]</sup>
+        <br/>
+        <sup>[8b]</sup>Bliss, CAST AIP, TeamScale
                 </q>
 
     </div>
@@ -120,24 +142,24 @@
       <q style="font-size:20px;margin-top:5px;line-height:45px">
 <li>Open source platform for continuous inspection of code quality</li>
 <li>Tracks developer's seven deadly sins</li>
-<sup>[8a]</sup><li>Gives trends of lagging and leading indicators</li>
+<sup>[9a]</sup><li>Gives trends of lagging and leading indicators</li>
 <li>Language agnostic</li>
 <li>Extensible through plugins</li>
-<sup>&nbsp;&nbsp;&nbsp;[8b]</sup><span style="float:right">Developed by SonarSource</span>
+<sup>&nbsp;&nbsp;&nbsp;[9b]</sup><span style="float:right">Developed by SonarSource</span>
 </q>
     </div>
 
     <div id="sonarevolution" class="step slide" data-x="1000" data-y="1000">
       <q><b>Sonar Evolution</b></q>
       <q style="font-size:20px;margin-top:5px;line-height:45px">
-                        <sup>[9a]</sup><li>mvn sonar:sonar</li>
+                        <sup>[10a]</sup><li>mvn sonar:sonar</li>
                         <li>Sonar Ruleset</li>
                         <li>Squid engine</li>
                         <li>SQALE</li>
                         <li>Bugs & Vulnerabilities, Code smell</li>
                         <li>Clustering</li>
         <br/>
-        <sup>[9b]</sup>
+        <sup>[10b]</sup>
                 </q>
 
     </div>
@@ -156,24 +178,11 @@
       </pre>
     </div>
 
-    <div id="sonar-metrics" class="step" data-x="4000" data-y="2000" data-rotate="90">
+    <div id="sonar-metrics" class="step" data-x="4000" data-y="2000" data-rotate="45">
       <q>Demo: <b>Sonar Metrics</b></q>
     </div>
 
-
-    <div id="sonar-techdebt" class="step slide" data-x="3000" data-y="2000" data-rotate="90">
-      <q><b>Technical Debt</b></q>
-      <br/>
-      <br/>
-      <p style="font-size:30px"><i>"If the debt grows large enough, eventually the company will spend more on servicing its debt than it invests in increasing the value of its other assets"</i>
-        <span style="float:right"><b>-Steve McConnell</b></span>
-        <br>
-        <span style="float:right;font-size:20px">(Author of Complete Code)</span>
-      </p>
-
-    </div>
-
-    <div id="squid-engine" class="step" data-x="2000" data-y="2000" data-rotate="90">
+    <div id="squid-engine" class="step" data-x="2000" data-y="2000" data-rotate="45">
       <q>Squid Engine</q>
       <img src="?" style="width: 70%;margin-left: -47px;"></img>
       <li>Custom Rules</li>
@@ -182,7 +191,7 @@
       <li><a href="http://www.sonarqube.org/get-involved/">Contribute</a></li>
     </div>
 
-    <div id="sonar-management" class="step" data-x="1000" data-y="2000" data-rotate="90">
+    <div id="sonar-management" class="step" data-x="1000" data-y="2000" data-rotate="45">
       <q><b>Demo : SonarQube Management</b></q>
 
       <br/>
@@ -213,26 +222,34 @@
 
     <div id="overview" class="step" data-x="2000" data-y="1000" data-scale="4"></div>
 
-    <div id="thanku" class="step" data-x="2000" data-y="3500" data-rotate="20" data-scale="2">
+        <div id="thanku" class="step" data-x="3000" data-y="2000" data-rotate="20">
       <p style="font-size=10px"> want to know more?
-        <span style="bottom:0;float:right"><a href="http://docs.sonarqube.org/display/SONAR/Documentation">Documentation</a><br/><a href="http://stackoverflow.com/questions/tagged/sonarqube">Stackoverflow<a><br/><a href="https://groups.google.com/forum/#!forum/sonarqube">Google Group</a></span>
+      <table><tr><td><img style="width=30px"/></td><!--</tr><tr>-->
+      <td><span class="reference"><a href="http://docs.sonarqube.org/display/SONAR/Documentation">Documentation</a><br/><a href="http://stackoverflow.com/questions/tagged/sonarqube">Stackoverflow<a><br/><a href="https://groups.google.com/forum/#!forum/sonarqube">Google Group</a></span>
+        </td></tr></table>
+        <span class="me">networking<br/>presentation link</span>
       </p>
-      <div></div>
+
+  </div>
   </div>
 
   <script src="js/impress.js"></script>
   <script>
     impress().init();
-    logThis = "[1a] https://www.sonarsource.com/customers/ (Look for sella.it) \n" +
-      "[2a] https://twitter.com/ceciliaborg/status/398059318810918912 \n" +
-      "[3a] http://docs.sonarqube.org/display/HOME/Developers'+Seven+Deadly+Sins \n" +
-      "[6a] http://www.sonarqube.org/wp-content/themes/sonar/images/7axes.png \n" +
-      "[7a] https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis \n" +
-      "[8a] http://softwaregarden.io/sonarqube/ \n" +
-      "[8b] https://www.sonarsource.com/ \n" +
-      "[9a} http://www.sonarqube.org/we-had-a-dream-mvn-sonarsonar/ \n" +
-      "[9b] http://www.sonarqube.org/category/blog/ \n" +
-      "[15a] http://www.sonarqube.org/putting-it-all-together-end-to-end-quality-with-sonarecosystem/ \n";
+    logThis = "[1a] https://www.sonarsource.com/customers/ (Look for sella.it) \n"+
+"[2a] https://twitter.com/ceciliaborg/status/398059318810918912 \n"+
+"[3a] http://www.informationweek.com/healthcare/policy-and-regulation/cover-oregon-diagnosis-oracle-overdose/d/d-id/1127710 \n"+
+"[3b] http://www.nytimes.com/2012/09/27/technology/personaltech/apples-new-maps-app-is-upgraded-but-full-of-snags-review.html?smid=tw-nytimesbusiness&moc.semityn.www&_r=0 \n"+
+"[3c] http://uk.businessinsider.com/apple-maps-review-ios-10-google-maps-2016-10 \n"+
+"[4a] http://docs.sonarqube.org/display/HOME/Developers'+Seven+Deadly+Sins \n"+
+"[7a] http://www.sonarqube.org/wp-content/themes/sonar/images/7axes.png \n"+
+"[8a] https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis \n"+
+"[8b] http://www.scrumexpert.com/tools/tools-to-assess-and-manage-technical-debt/ \n"+
+"[9a] http://softwaregarden.io/sonarqube/ \n"+
+"[9b] https://www.sonarsource.com/ \n"+
+"[10a} http://www.sonarqube.org/we-had-a-dream-mvn-sonarsonar/ \n"+
+"[10b] http://www.sonarqube.org/category/blog/ \n"+
+"[15a] http://www.sonarqube.org/putting-it-all-together-end-to-end-quality-with-sonarecosystem/ \n";
     console.log(logThis);
   </script>
 </body>
