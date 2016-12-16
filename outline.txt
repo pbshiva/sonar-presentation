@@ -28,6 +28,7 @@ Log This:
 "[8b] http://www.scrumexpert.com/tools/tools-to-assess-and-manage-technical-debt/ \n"+
 "[9a] http://softwaregarden.io/sonarqube/ \n"+
 "[9b] https://www.sonarsource.com/ \n"+
-"[10a} http://www.sonarqube.org/we-had-a-dream-mvn-sonarsonar/ \n"+
-"[10b] http://www.sonarqube.org/category/blog/ \n"+
+"[10a] http://www.sonarqube.org/we-had-a-dream-mvn-sonarsonar/ \n"+
+"[10b] http://docs.sonarqube.org/display/SONAR/How+To+Implement+an+Active-Passive+Cluster \n"+
+"[10c] http://www.sonarqube.org/category/blog/ \n"+
 "[15a] http://www.sonarqube.org/putting-it-all-together-end-to-end-quality-with-sonarecosystem/ \n";
