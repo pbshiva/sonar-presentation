@@ -31,4 +31,5 @@ Log This:
 "[10a] http://www.sonarqube.org/we-had-a-dream-mvn-sonarsonar/ \n"+
 "[10b] http://docs.sonarqube.org/display/SONAR/How+To+Implement+an+Active-Passive+Cluster \n"+
 "[10c] http://www.sonarqube.org/category/blog/ \n"+
-"[15a] http://www.sonarqube.org/putting-it-all-together-end-to-end-quality-with-sonarecosystem/ \n";
+"[15a] http://www.sonarqube.org/putting-it-all-together-end-to-end-quality-with-sonarecosystem/ \n"+
+"[15b] http://www.sonarqube.org/github-pull-request-analysis-helps-fix-the-leak/ \n";
